@@ -98,6 +98,14 @@ header .mobile {
   display: none;
 }
 
+@media only screen and (min-width: 900px) {
+  #join-btn {
+    display: none;
+  }
+}
+
+
+
 @media only screen and (max-width: 760px) {
   header .desktop {
     display: none;
@@ -108,7 +116,13 @@ header .mobile {
     width: 100%;
   }
 
-  
+  header .mobile #join-btn {
+    padding: .1875rem .5rem;
+    background-color: #9dc20b;
+    line-height: 1.6;
+    color: white;
+    
+  } 
 
   header .content {
     padding: .5rem 0;
@@ -125,13 +139,25 @@ header .mobile {
     padding: 0;
   }
 
-  header .mobile .button {
+  a .mobile #join-btn {
     padding: .1875rem .5rem;
     background-color: #9dc20b;
     line-height: 1.6;
     color: white;
+   
   }
 }
+
+@media only screen and (max-width: 900px) and (min-width: 600px) {
+  .desktop-logo {
+    display: none;
+  }
+  #sign-up-cta {
+    
+    background-color: transparent;
+    
+  }
+} 
 
 /* Sign Up Section */
 
@@ -449,26 +475,33 @@ header .mobile {
   
 }
 
-#quotes-section quote-citation {
+#quotes-section .quote-citation {
   height: 1.875rem;
 }
 
 @media only screen and (max-width: 760px) {
-  #quotes-section content {
+
+
+  #quotes-section .content-center {
     padding: 1.875rem .625rem;
+    display: block;
+    
   }
 
-  #quotes-section quote {
+  #quotes-section .quote {
     font-size: 1.5rem;
     line-height: 1.4;
+    
   }
 
-  #quotes-section quote-citation {
+  #quotes-section .quote-citation {
     display: block;
     padding-top: 1rem;
     margin: auto;
   }
 }
+
+
 
 /* Footer */
 
